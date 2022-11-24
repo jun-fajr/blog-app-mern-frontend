@@ -16,9 +16,9 @@ const HomePage = () => {
               </p>
               <a
                 className='inline-block px-12 py-5 text-lg text-white font-bold bg-blue-500 hover:bg-blue-600 rounded-full transition duration-200'
-                href='/'
+                href='/register'
               >
-                Buy This Course
+                Register
               </a>
             </div>
             <div className='w-full lg:w-1/2 px-4'>
