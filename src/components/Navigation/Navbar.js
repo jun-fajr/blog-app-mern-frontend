@@ -10,8 +10,8 @@ const Navbar = () => {
   const state = useSelector(state => state.users)
   const { userAuth } = state
   const isAdmin = userAuth?.isAdmin
-
-  return <>{!userAuth ? <PublicNavbar /> : userAuth ? <PrivateNavbar /> : isAdmin && <AdminNavbar />}</>
+  console.log(isAdmin)
+  return <>{isAdmin ? <AdminNavbar /> : userAuth ? <PrivateNavbar /> : <PublicNavbar />}</>
 }
 
 export default Navbar
